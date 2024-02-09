@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import { ProductCard } from '../components/ProductCard';
 import styled from 'styled-components';
+import './admin.css';
 
 export const SingleProduct = () => {
     const {id}=useParams();
@@ -15,10 +16,12 @@ export const SingleProduct = () => {
     },[id,products])
     // console.log(data)
   return (
+    <div id='banner1'>
     <DIV>
         <h2>Post-id: {id}</h2>
         <ProductCard {...data} />
     </DIV>
+    </div>
   )
 }
 const DIV=styled.div`
