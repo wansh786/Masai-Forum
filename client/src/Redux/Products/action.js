@@ -15,9 +15,9 @@ export const addProduct=(newProduct)=>(dispatch)=>{
 
 export const getProduct=(paramObj)=>(dispatch)=>{
     dispatch({type:PRODUCT_FAILURE})
-    axios.get("http://localhost:8080/product",paramObj)
+    axios.get("https://tasty-khakis-tuna.cyclic.app/posts",paramObj)
         .then((res)=>{
-            dispatch({type:GET_PRODUCT_SUCCESS,payload:res.data})
+            dispatch({type:GET_PRODUCT_SUCCESS,payload:res.data.post})
         })
         .catch((err)=>{
             dispatch({type:PRODUCT_FAILURE})
