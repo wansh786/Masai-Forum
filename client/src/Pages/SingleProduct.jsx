@@ -16,7 +16,7 @@ export const SingleProduct = () => {
     // console.log(data)
   return (
     <DIV>
-        <h2>Product-id: {id}</h2>
+        <h2>Post-id: {id}</h2>
         <ProductCard {...data} />
     </DIV>
   )

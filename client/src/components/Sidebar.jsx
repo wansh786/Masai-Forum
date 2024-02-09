@@ -56,7 +56,7 @@ export const Sidebar = () => {
             <input type="checkbox" value={"Bussiness"} onChange={handlCategory} checked={category.includes("Bussiness")}/>
             <label>Bussiness</label>
         </div>
-        <h3>Sort by price</h3>
+        <h3>Sort by Likes</h3>
         <div>
             <input type="radio" name='order' value={"asc"} onChange={handleOrder} checked={order==="asc"}/>
             <label>Low to Heigh</label>

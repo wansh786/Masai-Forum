@@ -35,8 +35,10 @@ export const ProductList = () => {
 }
 
 const DIV=styled.div`
+    width:60%;
+    height:200px;
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns:auto;
     gap:10px;
     padding:20px;
     text-align:center;

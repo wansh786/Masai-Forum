@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import { editProduct } from '../Redux/Products/action';
 import styled from 'styled-components';
+import './admin.css';
 export const EditProduct = () => {
     const {id}=useParams();
     const products=useSelector((store)=>store.productsReducer.products)
@@ -27,13 +28,16 @@ export const EditProduct = () => {
         console.log(data)
     }
   return (
+    <div id='banner1'>
     <DIV>
-        <h1>{id}</h1>
+        <h1>Post-Id: {id}</h1>
+        <label>Like</label>
         <input 
             type="number"
             value={likes}
             onChange={(e)=>setLikes(+e.target.value)}
         />
+        <label>Title</label>
          <input 
             type="text"
             value={title}
@@ -41,6 +45,7 @@ export const EditProduct = () => {
         />
         <button onClick={handleEdit}>Update</button>
     </DIV>
+    </div>
   )
 }
 const DIV=styled.div`
@@ -63,7 +68,7 @@ const DIV=styled.div`
         cursor: pointer;  
     }
     h1{
-        color:green;
+        color:black;
     } 
     #span{
         color:green;

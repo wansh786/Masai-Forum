@@ -20,7 +20,7 @@ export const Navbar = () => {
 }
 
 const DIV=styled.div`
-    /* position:relative; */
+    position:relative;
     display:flex;
     align-items:center;
     /* gap:25px; */

@@ -33,7 +33,7 @@ export const Admin = () => {
     <div id='banner1'>
     <DIV>
         <form onSubmit={handleSubmit}>
-        <h1>Add Product</h1>
+        <h1>Add Post</h1>
         <input type="text" name='title' value={data.title} placeholder='Title' onChange={handleChange}/>
         <input type="text" name='image' value={data.image} placeholder='Image' onChange={handleChange}/>
         <input type="text" name='content' value={data.content} placeholder='content' onChange={handleChange}/>
